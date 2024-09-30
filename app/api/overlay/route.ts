@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
-import { createCanvas, loadImage, CanvasRenderingContext2D } from "canvas";
+import { createCanvas, loadImage, CanvasRenderingContext2D, registerFont } from "canvas";
 import path from "path";
 import fs from "fs";
+
+ // Register the DejaVu Sans font
+ registerFont(path.join(process.cwd(), 'fonts', 'DejaVuSans.ttf'), { family: 'DejaVu Sans' });
 
 function adjustLongLegalText(
   text: string,
