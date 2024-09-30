@@ -61,15 +61,14 @@ export async function POST(request: Request) {
     const data = await request.json();
     console.log("Request body:", data);
 
-    const skipIndexes = {
+    const skipIndexes: Record<string, number[]> = {
       propertyInformation: [0], // Skip the first item in propertyInformation
-      legalInformation: [0, 2], // Skip the first and third items in legalInformation "Short Legal" "Long Legal"
+      legalInformation: [0, 2], // Skip the first and third items in legalInformation
     };
 
     // Pixel coordinates for each field
     const pixelCoordinates = {
       ownerInformation: [{ start: [390, 490] }],
-      //   propertyInformation: [{ start: [390, 880] }],
       address: [{ start: [390, 880] }], // Add coordinates for the address
       city: [{ start: [390, 1060] }],
       legalInformation: [{ start: [390, 1174] }, { start: [390, 1210] }],
@@ -111,7 +110,7 @@ export async function POST(request: Request) {
         );
       }
       if (key === "city") {
-        // Handle address separately
+        // Handle city separately
         ctx.fillText(
           data.city,
           coordinates[0].start[0],
@@ -164,7 +163,7 @@ export async function POST(request: Request) {
         "Content-Length": buffer.length.toString(),
       },
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error processing request:", error);
     return NextResponse.json(
       { error: "Internal server error", message: error.message },
