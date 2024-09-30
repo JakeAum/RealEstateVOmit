@@ -3,12 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ReVo",
+  appName: "ReVom",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Effortlessly Generate Contracts for Real-Estate in Charlotte County.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "revo.vercel.app",
+  domainName: "revom.vercel.app",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
