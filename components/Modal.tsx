@@ -50,8 +50,8 @@ const Modal = ({ isModalOpen, setIsModalOpen, selectedData }: ModalProps) => {
 
       // Second API call to overlay information on the contract
       const addressString = `${selectedData?.STANDARD}`.trim();
-      const cityString =
-        `${selectedData?.POSTOFFICE}, FL, ${selectedData?.ZIPCODE}`.trim();
+      const cityString = `${selectedData?.POSTOFFICE}, FL, ${selectedData?.ZIPCODE}`.trim();
+      
       const overlayResponse = await fetch("/api/overlay", {
         method: "POST",
         headers: {
@@ -70,10 +70,11 @@ const Modal = ({ isModalOpen, setIsModalOpen, selectedData }: ModalProps) => {
           `HTTP error! status: ${overlayResponse.status}, message: ${errorText}`
         );
       }
-
+      
       const overlayBlob = await overlayResponse.blob();
       const overlayUrl = URL.createObjectURL(overlayBlob);
       setOverlayImage(overlayUrl);
+      console.log('Overlay Sucessfull',overlayUrl)
 
       setIsLoading(false);
     } catch (error) {
