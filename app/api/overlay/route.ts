@@ -100,15 +100,13 @@ export async function POST(request: Request) {
 
     // Overlay text on the image
     ctx.font = "26px 'DejaVu Sans'";
-    ctx.textBaseline = 'top';
-    ctx.textAlign = 'left';
     ctx.fillStyle = "red";
 
     // Draw text for each data point using pixel coordinates
     Object.entries(pixelCoordinates).forEach(([key, coordinates]) => {
       if (key === "address") {
         // Handle address separately
-        ctx.strokeText(
+        ctx.fillText(
           data.address,
           coordinates[0].start[0],
           coordinates[0].start[1]
@@ -116,7 +114,7 @@ export async function POST(request: Request) {
       }
       if (key === "city") {
         // Handle city separately
-        ctx.strokeText(
+        ctx.fillText(
           data.city,
           coordinates[0].start[0],
           coordinates[0].start[1]
@@ -137,14 +135,14 @@ export async function POST(request: Request) {
               if (key === "legalInformation" && index === 3) {
                 const adjustedLines = adjustLongLegalText(text);
                 adjustedLines.forEach((line, lineIndex) => {
-                  ctx.strokeText(
+                  ctx.fillText(
                     line,
                     coordinates[drawIndex].start[0],
                     coordinates[drawIndex].start[1] + lineIndex * 26
                   );
                 });
               } else {
-                ctx.strokeText(
+                ctx.fillText(
                   text,
                   coordinates[drawIndex].start[0],
                   coordinates[drawIndex].start[1]
