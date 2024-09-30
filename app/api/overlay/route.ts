@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     ctx.drawImage(image, 0, 0);
 
     // Overlay text on the image
-    ctx.font = "26px sans-serif";
+    ctx.font = "26px Verdana, Geneva, sans-serif";
     ctx.fillStyle = "red";
 
     // Draw text for each data point using pixel coordinates
@@ -159,7 +159,7 @@ export async function POST(request: Request) {
     return new NextResponse(buffer, {
       status: 200,
       headers: {
-        "Content-Type": "image/png",
+        "Content-Type": "image/png; charset=utf-8",
         "Content-Length": buffer.length.toString(),
       },
     });
