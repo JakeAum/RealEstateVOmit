@@ -57,51 +57,52 @@ const PrivacyPolicy = () => {
           className="leading-relaxed whitespace-pre-wrap"
           style={{ fontFamily: "sans-serif" }}
         >
-          {`Last Updated: 2023-08-25
+          {`Effective Date: September 29, 2024
 
-Thank you for visiting ShipFast ("we," "us," or "our"). This Privacy Policy outlines how we collect, use, and protect your personal and non-personal information when you use our website located at https://shipfa.st (the "Website").
+At ReVo, we are committed to protecting your privacy and ensuring the security of any information we collect. This Privacy Policy outlines our practices regarding data collection, use, and disclosure.
 
-By accessing or using the Website, you agree to the terms of this Privacy Policy. If you do not agree with the practices described in this policy, please do not use the Website.
+ 1. Information We Collect
 
-1. Information We Collect
+User Data
+- We do not collect any personal user data.
 
-1.1 Personal Data
+Non-Personal Data
+- We collect non-personal data in the form of searches conducted on our platform. This information is used solely for the purpose of request completion and improving our service.
 
-We collect the following personal information from you:
+ 2. Use of Information
 
-Name: We collect your name to personalize your experience and communicate with you effectively.
-Email: We collect your email address to send you important information regarding your orders, updates, and communication.
-Payment Information: We collect payment details to process your orders securely. However, we do not store your payment information on our servers. Payments are processed by trusted third-party payment processors.
+The non-personal data we collect is used exclusively for:
+- Completing user requests
+- Improving our service and user experience
+- Analyzing usage patterns to enhance our platform's functionality
 
-1.2 Non-Personal Data
+ 3. Data Sharing and Disclosure
 
-We may use web cookies and similar technologies to collect non-personal information such as your IP address, browser type, device information, and browsing patterns. This information helps us to enhance your browsing experience, analyze trends, and improve our services.
+We do not share the data we collect with any third parties. Your searches and any other non-personal information remain strictly confidential within our organization.
 
-2. Purpose of Data Collection
+ 4. Data Security
 
-We collect and use your personal data for the sole purpose of order processing. This includes processing your orders, sending order confirmations, providing customer support, and keeping you updated about the status of your orders.
+We implement appropriate technical and organizational measures to protect the information we collect against unauthorized access, alteration, disclosure, or destruction.
 
-3. Data Sharing
+ 5. Children's Privacy
 
-We do not share your personal data with any third parties except as required for order processing (e.g., sharing your information with payment processors). We do not sell, trade, or rent your personal information to others.
+ReVo does not knowingly collect any data from children under the age of 13. Our service is not directed at children, and we do not intentionally gather information from individuals under the age of 13.
 
-4. Children's Privacy
+ 6. Changes to This Privacy Policy
 
-ShipFast is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us at the email address provided below.
+We may update our Privacy Policy from time to time. We will notify users of any changes via email. We encourage you to review this Privacy Policy periodically for any changes.
 
-5. Updates to the Privacy Policy
+ 7. Your Consent
 
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any updates will be posted on this page, and we may notify you via email about significant changes.
+By using ReVo, you consent to our Privacy Policy and agree to its terms.
 
-6. Contact Information
+ 8. Contact Us
 
-If you have any questions, concerns, or requests related to this Privacy Policy, you can contact us at:
+If you have any questions about this Privacy Policy, please contact us at:
 
-Email: marc@shipfa.st
+Email: jacobauman00@gmail.com
 
-For all other inquiries, please visit our Contact Us page on the Website.
-
-By using ShipFast, you consent to the terms of this Privacy Policy.`}
+This privacy policy was last updated on September 29, 2024.`}
         </pre>
       </div>
     </main>

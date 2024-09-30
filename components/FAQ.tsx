@@ -13,22 +13,43 @@ interface FAQItemProps {
 
 const faqList: FAQItemProps[] = [
   {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    question: "What does this do exactly?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        This tool helps real estate agents generate a filled-out seller contract template by entering a property address.
+      </div>
+    ),
   },
   {
-    question: "Can I get a refund?",
+    question: "Can I search outside of Charlotte County, FL?",
     answer: (
       <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        No, our current database only has properties within Charlotte County.
       </p>
     ),
   },
   {
-    question: "I have another question",
+    question: "How accurate is the information?",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <div className="space-y-2 leading-relaxed">
+        The data comes from official Charlotte County records, but always verify critical details.
+      </div>
+    ),
+  },
+  {
+    question: "Why does the Legal Description get shortened?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Long Legal Descriptions longer than 3 lines are abreviated due to formatting concerns.
+      </div>
+    ),
+  },
+  {
+    question: "How do I contact the creator?",
+    answer: (
+      <div className="space-y-2 leading-relaxed">
+        Email jacobauman00@gmail.com with your issue. Business inquiries are welcome.
+      </div>
     ),
   },
 ];
@@ -48,7 +69,7 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
         aria-expanded={isOpen}
       >
         <span
-          className={`flex-1 text-base-content ${isOpen ? "text-primary" : ""}`}
+          className={`flex-1 text-base-content ${isOpen ? "text-secondary" : ""}`}
         >
           {item?.question}
         </span>
@@ -95,10 +116,10 @@ const FaqItem = ({ item }: { item: FAQItemProps }) => {
 
 const FAQ = () => {
   return (
-    <section className="bg-base-200" id="faq">
+    <section className="bg-base-100" id="faq">
       <div className="py-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex flex-col text-left basis-1/2">
-          <p className="inline-block font-semibold text-primary mb-4">FAQ</p>
+          <p className="inline-block font-semibold text-secondary mb-4">FAQ</p>
           <p className="sm:text-4xl text-3xl font-extrabold text-base-content">
             Frequently Asked Questions
           </p>
