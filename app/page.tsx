@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <>
       <Suspense>
-        <Header />
+      <div style={{ position: 'relative', zIndex: 1000 }}>
+          <Header />
+        </div>
       </Suspense>
       <main>
         <CTA/>
