@@ -8,7 +8,7 @@ const config = {
   appDescription:
     "Effortlessly Generate Contracts for Real-Estate in Charlotte County.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "",
+  domainName: "revo-vercel.app",
   crisp: {
     // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (mailgun.supportEmail) otherwise customer support won't work.
     id: "",
