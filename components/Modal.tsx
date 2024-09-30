@@ -74,7 +74,7 @@ const Modal = ({ isModalOpen, setIsModalOpen, selectedData }: ModalProps) => {
       const overlayBlob = await overlayResponse.blob();
       const overlayUrl = URL.createObjectURL(overlayBlob);
       setOverlayImage(overlayUrl);
-      console.log('Overlay Sucessfull',overlayUrl)
+      
 
       setIsLoading(false);
     } catch (error) {

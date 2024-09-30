@@ -96,7 +96,7 @@ export async function POST(request: Request) {
     ctx.drawImage(image, 0, 0);
 
     // Overlay text on the image
-    ctx.font = "26px Arial";
+    ctx.font = "26px sans-serif";
     ctx.fillStyle = "red";
 
     // Draw text for each data point using pixel coordinates
