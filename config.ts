@@ -3,7 +3,7 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ReVom",
+  appName: "Revom",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
     "Effortlessly Generate Contracts for Real-Estate in Charlotte County.",
