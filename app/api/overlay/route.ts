@@ -43,8 +43,8 @@ function adjustLongLegalText(
     text.startsWith(processedText) && text.length === processedText.length;
 
   // If the text is not complete and we haven't already added the suffix, add it now
-  if (!isComplete && !lines[lines.length - 1].endsWith("[Legal ABR]")) {
-    lines[lines.length - 1] += " ... [Legal ABR]";
+  if (!isComplete && !lines[lines.length - 1].endsWith("...")) {
+    lines[lines.length - 1] += "...";
   }
 
   return lines;
