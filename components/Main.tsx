@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import React from 'react';
 import Modal from "@/components/Modal";
 import { createClient } from "@supabase/supabase-js";
 
@@ -34,7 +35,7 @@ const Main = () => {
     }
   };
 
-  const debounce = (func: Function, delay: number) => {
+  const debounce = (func: (...args: any[]) => void, delay: number) => {
     let timeoutId: NodeJS.Timeout;
     return (...args: any[]) => {
       clearTimeout(timeoutId);
@@ -50,7 +51,7 @@ const Main = () => {
     } else {
       setSearchResults([]);
     }
-  }, [searchTerm]);
+  }, [searchTerm, debouncedSearch]);
 
   const handleResultClick = (result: any) => {
     setSelectedData(result);
