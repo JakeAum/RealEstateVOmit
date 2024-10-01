@@ -87,7 +87,7 @@ const Main = () => {
       </div>
 
       {searchResults.length > 0 && (
-        <ul className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-auto z-10">
+        <ul className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-auto z-100">
           {searchResults.map((result: any) => (
             <li
               key={result.id}
