@@ -13,9 +13,9 @@ export default function Home() {
       {/* </Suspense> */}
       <main>
         <CTA/>
-        <div style={{ position: 'relative', zIndex: 0 }}>
+
           <FAQ />
-        </div>
+      
       </main>
       <Footer />
     </>

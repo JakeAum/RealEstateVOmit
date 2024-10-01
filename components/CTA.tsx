@@ -22,7 +22,9 @@ const CTA = () => {
           {/* <button className="btn btn-primary btn-wide">
             Get {config.appName}
           </button> */}
-          <Main/>
+          <div className="relative z-10">
+            <Main/>
+          </div>
 
         </div>
       </div>
