@@ -12,17 +12,10 @@ export default function Home() {
         {/* </div> */}
       {/* </Suspense> */}
       <main>
-        <div style={{ position: 'relative', zIndex: 1000 }}>
         <CTA/>
+        <div style={{ position: 'relative', zIndex: -1000 }}>
+          <FAQ />
         </div>
-
-        
-       
-        {/* <Main /> */}
-        {/* <Hero /> */}
-        
-        {/* <WithWithout/> */}
-        <FAQ />
       </main>
       <Footer />
     </>
