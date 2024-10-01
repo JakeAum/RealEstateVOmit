@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
@@ -13,7 +12,11 @@ export default function Home() {
         {/* </div> */}
       {/* </Suspense> */}
       <main>
+        <div style={{ position: 'relative', zIndex: 1000 }}>
         <CTA/>
+        </div>
+
+        
        
         {/* <Main /> */}
         {/* <Hero /> */}
